@@ -92,5 +92,6 @@ Service management (systemd)
 Package installation automation
 File deployment using Ansible
 Playbook orchestration using import_playbook
+```
 <img width="2556" height="1439" alt="ansible1" src="https://github.com/user-attachments/assets/c0436709-cef9-4c8b-9ace-309596764a2c" />
 <img width="2543" height="1208" alt="ansible2" src="https://github.com/user-attachments/assets/7190f105-43cf-4ea2-a752-05f2e8a09ca4" />
