@@ -1,0 +1,45 @@
+---
+
+- name: Configure Web Server
+
+  hosts: all
+
+  become: yes
+
+
+
+  tasks:
+
+
+
+    - name: Stop nginx if installed
+
+      service:
+
+        name: nginx
+
+        state: stopped
+
+      ignore_errors: yes
+
+
+
+    - name: Install lighttpd
+
+      package:
+
+        name: lighttpd
+
+        state: present
+
+
+
+    - name: Start and enable lighttpd
+
+      service:
+
+        name: lighttpd
+
+        state: started
+
+        enabled: yes
